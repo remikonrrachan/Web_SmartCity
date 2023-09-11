@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="about.css">
+        <title>ABOUT US</title>
+    </head>
+    <body>
+        <section>
+          <img src="picture/bg.jpg" id="bg">
+          <img src="picture/moon.png" id="moon">
+          <img src="picture/mountain.png" id="mountain">
+          <img src="picture/road.png" id="road">
+          <h3 id="text">ABOUT US</h3>
+        </section>
+        <script type="text/javascript">
+          let bg = document.getElementById("bg");
+          let moon = document.getElementById("moon");
+          let mountain = document.getElementById("mountain");
+          let road = document.getElementById("road");
+          let text = document.getElementById("text");
+          window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.15 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+          })
+
+        </script>
+        <section>
+          <h2>สมาชิกผู้จัดทำ</h2>
+          <div class="name name1">ชื่อ : นาย วุฒิภูมิ ศรีสวัสดิ์</div>
+          <div class="studentid id1">รหัสนักศึกษา : 6320610015</div>
+        </section>
+        <section>
+          <div class="name name2">ชื่อ : นาย กิตติพล เจะอาลี</div>
+          <div class="studentid id2">รหัสนักศึกษา : 6320610002</div>
+          <div class="name name3">ชื่อ : นาย กรราชัน กลับทับลัง</div>
+          <div class="studentid id3">รหัสนักศึกษา : 6320610001</div>
+        </section>
+          
+        <img src="picture/wut.jpg" class="profile profile1">
+        <img src="picture/kit.jpg" class="profile profile2">
+        <img src="picture/remi.jpg" class="profile profile3"
+    </body>
+
+</html>

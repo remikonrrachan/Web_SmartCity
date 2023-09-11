@@ -1,0 +1,226 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Popins', sans-serif;
+
+}
+.bgslide{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  position:absolute;
+  z-index: 1000;
+  width: 120px;
+  height: 120px;
+  top: 30%;
+  left: 5%;
+}
+.container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.row{
+  display: flex;
+  height: 88%;
+  align-items: center;
+  margin-left: 100px;
+}
+.col{
+  flex-basis: 70%;
+
+}
+.text{
+  flex-basis: 30%;
+}
+.card{
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  background: radial-gradient(#111 50%,#000 100%);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  margin-left: 10%;
+  transition: 0.5s;
+}
+.card1{
+  background-image: url("picture/smart city.jfif");
+}
+.card2{
+  background-image: url("picture/tourism location.jfif");
+}
+.card3{
+  background-image: url("picture/house.jfif");
+}
+.card:hover{
+  transform: scale(1.3) translateY(-10px);
+}
+h1{
+  color: white;
+  font-size: 100px;
+  padding-left: 80px;
+}
+
+p{
+  color: white;
+  font-size: 15px;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  z-index: 100;
+}
+header .logo{
+  position: relative;
+  color: white;
+  font-weight: 700;
+  font-size: xx-large;
+  text-decoration: none;
+}
+header ul{
+  position: relative;
+  display: flex;
+}
+header ul li{
+  list-style: none;
+  transition: 0.5s;
+}
+header ul li:hover{
+  background: white;
+}
+header ul li a:hover{
+  color: black;
+}
+header ul li a{
+  display: inline-block;
+  color: white;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+footer{
+  z-index: 1000;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  display: block;
+  background-image: url(picture/1690247.png);
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}
+.slider{
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+
+}
+.slides{
+  width: 500%;
+  height: 700px;
+  display: flex;
+  
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width: 20%;
+  transition: 2s;
+
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+
+}
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -100px;
+  margin-left: 25%;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 2px solid black;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  z-index: 2;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px; 
+}
+.manual-btn:hover{
+  background: white;
+  border: 2px solid white;
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+.navigation-automatic{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 600px;
+  margin-left: 25%;
+
+}
+.navigation-automatic div{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+
+}
+.navigation-automatic div:not(:last-child){
+  margin-right: 40px;
+}
+#radio1:checked ~ .navigation-automatic .auto-btn1{
+  background: white;
+  z-index: 3;
+}
+#radio2:checked ~ .navigation-automatic .auto-btn2{
+  background: white;
+  z-index: 3;
+  
+}
+#radio3:checked ~ .navigation-automatic .auto-btn3{
+  background: white;
+  z-index: 3;
+}

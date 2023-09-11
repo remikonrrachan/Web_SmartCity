@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>SMART CITY</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <header>
+    <a href="#" class="logo">SMARTCITY</a>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="smart.HTML">SMART</a></li>
+      <li><a href="travel.html">TRAVEL</a></li>
+      <li><a href="minipro.html">PROJECT</a></li>
+      <li><a href="about.html" target="_blank">ABOUT</a></li>
+    </ul>
+  </header>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col text">
+          <h1>Phuket</h1>
+          <p>เมืองแห่งการท่องเที่ยวมีสถานที่ให้เราได้เพลิดเพลินไปกับความงามของธรรมชาติ แต่ตัดมาในฝั่งของตัวเมืองก็มีความทันสมัยเป็นอย่างมากจนมาสมารถจัดได้ว่าเป็น Smart City แห่งนึงของประเทศไทย</p>
+        </div>
+        <div class="col">
+          <a href="smart.HTML" ><div class="card card1"></div></a>
+          <a href="travel.html" ><div class="card card2"></div></a>
+          <a href="minipro.html" ><div class="card card3"></div></a>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <img src="picture/location_icon.png" class="icon">
+    <div class="bgslide">
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" checked>
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <div class="slide first">
+            <img src="picture/citybg1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="picture/citybg2.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="picture/citybg3.png" alt="">
+          </div>
+          <div class="navigation-automatic">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+  
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </div>
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if(counter > 3){
+            counter = 1;
+          }
+        },10000);
+      </script>
+    </div>
+    <!-- <div class="footer">
+      <img src="Smart City.png">
+    </div> -->
+  </body>
+  <footer>
+  </footer>
+</html>
